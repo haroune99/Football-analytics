@@ -4,4 +4,4 @@ Hi all. I am Haroune, 24yo, living in the UK. I am very muchly interested in foo
 Feel free to use any piece of code :)
 
 
-![](https://komarev.com/ghpvc/?haroune99)
+![](https://komarev.com/ghpvc/haroune99)
