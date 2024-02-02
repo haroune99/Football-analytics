@@ -16,35 +16,3 @@ I would like to understand which ones are identical
 I also did try to update our roles correctly. For example: We tried to execute a data transfer after removing the DSM3 transactions. When we tried to execute DSM and process an action to bring down data this happens
 "You are not authorized to use transaction /USE/DSM3_MON "
 I either have to include all transactions or is this something that can be fixed in the code we have?
----------------------------------------------------------------------------------------------------------------------------------------
-Ticket 2: Info request #141196 - Add Role to user
-Hi Support
-I received the following from Seb with a question on 'add role to a user'
-I don’t seems to see an ‘Add user’ option for new user in ‘User Setting” to the enrolled into the user group of role (Admin, developer, superuser, user)
-Or are they manage by Authorisation like /USE/DSM3_ADMIN for DSM Administration to be added into a user profile?
-Can you direct me to the right menu?
-This is what I see – I was expecting to see a add/change/delete user options to assign respective role (Admin, developer, superuser,user)
-Can you assist
-Thanks
-Dear
-Thank you for logging the ticket on Client Central. We will review the information provided and get back to you shortly.
-Best regards,
-EPI-USE Labs Global Support
-Dear,
-is the customer using DSM4/DSM5 ?
-As this is a pure knowledge transfer inquiry - wouldn´t this be a good case for a services person to involve? (billed time)
-Thanks
-N**** is on DSM3
-Dear
-Can you send us a screenshot of the DSM's About Screen:
-start DSM transaction -> About -> About and send us the screenshot.
-Thanks and regards,
-EPI-USE Labs Global Support
-Dear,
-Here is the screenshot
-Thanks
-Dear
-Can you please review Section 3. Authorizations overview and Section 4. Configuring authorizations of the DSM 4 Installation and Administration Guide which contains details of the DSM Roles, Data Sync Manager Delivered Authorizations etc and let us know if you have any additional questions. 
-Please select the Accept option if you are satisfied that the suggested solution has resolved this ticket, alternatively select the Decline option for further assistance.
-Best regards,
-EPI-USE Labs Global Support
