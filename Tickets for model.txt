@@ -1,18 +1,2 @@
 Ticket 1 Info request #54200 - Question about available transactions
-I have attached a list of transactions that are available. I would like to understand what they all are in better detail. Some appear to be duplicates and it appears that maybe your company is trying to move toward more generic transactions instead of linking them to versions (like /USE/DSM3)
-I searched my manuals for more details and was not able to find that information. This will be very useful because we have taken your default foundation roles and built our roles and we want to keep them current.
-For example: What is the difference between /USE/DSM and /USE/DSM3
-Dear 
-Thank you for logging the ticket on Client Central. We will get back to you shortly.
-Kind regards
-EPI-USE Labs Global Support
-Dear
-You are correct that we did indeed move towards generic transactions codes and removed the version (3) from them but we still included them as we need to support those customers who are used to using the older DSM3 transaction codes even though they may have moved to DSM4, e.g /USE/DSM3, /DSM3OD and /USE/DSM will all invoke DSM 4 Object Sync.
-The transactions with LT are used by EPI-USE Labs Services personnel for System Landscape Optimization projects where they need to perform their Landscape Transformation activities .
-Are their specific transaction codes in the spreadsheet where the Transaction Text is not sufficient and you require more information for?
-Thanks and regards
-EPI-USE Labs Global Support
-I would like to understand which ones are identical
-I also did try to update our roles correctly. For example: We tried to execute a data transfer after removing the DSM3 transactions. When we tried to execute DSM and process an action to bring down data this happens
-"You are not authorized to use transaction /USE/DSM3_MON "
-I either have to include all transactions or is this something that can be fixed in the code we have?
+I have attached a list of transactions that are available. I would like to understand what they all are in better detail. Some appear to be duplicates and it 
