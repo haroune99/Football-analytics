@@ -1,2 +1,148 @@
 Ticket 1 Info request #54200 - Question about available transactions
-I have attached a list of transactions that are available. I would like to understand what they all are in better detail. Some appear to be duplicates and it 
+I have attached a list of transactions that are available. I would like to understand what they all are in better detail. Some appear to be duplicates and it appears that maybe your company is trying to move toward more generic transactions instead of linking them to versions (like /USE/DSM3)
+I searched my manuals for more details and was not able to find that information. This will be very useful because we have taken your default foundation roles and built our roles and we want to keep them current.
+For example: What is the difference between /USE/DSM and /USE/DSM3
+Dear 
+Thank you for logging the ticket on Client Central. We will get back to you shortly.
+Kind regards
+EPI-USE Labs Global Support
+Dear
+You are correct that we did indeed move towards generic transactions codes and removed the version (3) from them but we still included them as we need to support those customers who are used to using the older DSM3 transaction codes even though they may have moved to DSM4, e.g /USE/DSM3, /DSM3OD and /USE/DSM will all invoke DSM 4 Object Sync.
+The transactions with LT are used by EPI-USE Labs Services personnel for System Landscape Optimization projects where they need to perform their Landscape Transformation activities .
+Are their specific transaction codes in the spreadsheet where the Transaction Text is not sufficient and you require more information for?
+Thanks and regards
+EPI-USE Labs Global Support
+I would like to understand which ones are identical
+I also did try to update our roles correctly. For example: We tried to execute a data transfer after removing the DSM3 transactions. When we tried to execute DSM and process an action to bring down data this happens
+"You are not authorized to use transaction /USE/DSM3_MON "
+I either have to include all transactions or is this something that can be fixed in the code we have?
+---------------------------------------------------------------------------------------------------------------------------------------
+Ticket 2: Info request #141196 - Add Role to user
+Hi Support
+I received the following from Seb with a question on 'add role to a user'
+I don’t seems to see an ‘Add user’ option for new user in ‘User Setting” to the enrolled into the user group of role (Admin, developer, superuser, user)
+Or are they manage by Authorisation like /USE/DSM3_ADMIN for DSM Administration to be added into a user profile?
+Can you direct me to the right menu? 
+This is what I see – I was expecting to see a add/change/delete user options to assign respective role (Admin, developer, superuser,user)
+Can you assist
+Thanks
+Dear
+Thank you for logging the ticket on Client Central. We will review the information provided and get back to you shortly.
+Best regards,
+EPI-USE Labs Global Support
+Dear,
+is the customer using DSM4/DSM5 ?
+As this is a pure knowledge transfer inquiry - wouldn´t this be a good case for a services person to involve? (billed time)
+Thanks
+N**** is on DSM3
+Dear
+Can you send us a screenshot of the DSM's About Screen:
+start DSM transaction -> About -> About and send us the screenshot.
+Thanks and regards
+EPI-USE Labs Global Support
+Dear,
+Here is the screenshot
+Thanks
+Dear
+Can you please review Section 3. Authorizations overview and Section 4. Configuring authorizations of the DSM 4 Installation and Administration Guide which contains details of the DSM Roles, Data Sync Manager Delivered Authorizations etc and let us know if you have any additional questions. 
+Please select the Accept option if you are satisfied that the suggested solution has resolved this ticket, alternatively select the Decline option for further assistance.
+Best regards,
+EPI-USE Labs Global Support
+---------------------------------------------------------------------------------------------------------------------------------------
+Ticket 3: Info request #58019 - Enable authorization for DMS on DEV & QA
+SAP BASIS team has asked me to enable authorization for DMS on DEV & QA, Please advise on the DSM roles that needs to be assigned to SAP Basis team to test authorization of DMS on Dev and QA.
+Dear 
+Thank you for logging the ticket on Client Central.
+Please see more information on Authorizations in the DSM4 Installation and Admin guide, Section 4 page 17-36 - DSM 4 Installation and Administration Guide
+I am sending you more information on the DSM Authorization Roles.
+Each of the DSM products has layers of functionality. These layers of functionality are categorized into specific roles that will be assumed by a SAP user. The roles are defined within the product. These SAP users are SAP Dialog users and are referred to as Developers, Administrators, Super Users and Users. These roles are enforced by SAP authorizations.
+DSM introduces an additional three authorization objects into your environment: Z123456; Z5948428; and Z0590589. These authorization objects are used to restrict functionality to the DSM product components. These authorization objects will not be part of your existing SAP_ALL user profile unless they are specifically added.
+The following Authorization Profile Templates are delivered as part of DSM to assist in the setting up of authorization roles for users of DSM. To see the list of templates, please execute transaction PFCG. Then access the ‘Utilities’ menu and select ‘Templates’ from the drop-down list. You will see a popup with the templates included in DSM.
+Technical name:
+/USE/vovbneoj3ve: Data Sync Manager – Administrator
+/USE/PfhvbeiberifeE: Data Sync Manager – Developer
+/USE/Pnjfvfkbve: Data Sync Manager – Object Sync User
+/USE/PbjkvbfkjvE: Data Sync Manager – Object Sync Super User
+/USE/PjkdfbvfdjkE: Data Sync Manager – Client Sync User
+/USE/Pjkvbfkjevb: Data Sync Manager – Data Secure User
+/USE/Pnvjflnvfs: Data Sync Manager – Data Secure Super User
+/USE/Pjkfbvkvdv: Data Sync Manager – System Builder User
+/USE/Pbvhfvbfbv: Data Sync Manager - iPhone App
+/USE/nvjfnjvve: Data Sync Manager – Object Sync DSM3COMM user authorizations
+Please let us know if you have more questions or need further assistance.
+Kind regards
+EPI-USE Labs Global Support
+Dear,
+I have executed transaction code PFCG to see the list of templates on QA and I did manage to see the templates:
+My question is are these templates working like roles? can they be assigned to users so that the user can execute on DSM some of the transaction code like: /USE/DSM and /USE/DSM3 . At the moment the Basis person is not able to execute these transactions codes so I am wondering if they have access to this
+regards
+Dear 
+A user will need one of the DSM roles in order to access DSM. On page 14 of the DSM 4 Installation and Administration Guide the roles and their functions are outlined. You can use these descriptions to determine which DSM role the Basis team needs. Usually the Basis team has the Administrator and Client Sync User role.
+Please let us know if you have other questions.
+Kind regards
+EPI-USE Labs Global Support
+---------------------------------------------------------------------------------------------------------------------------------------
+Ticket 4: Info request #58848 - Some HowTo Questions
+1) Object Sync / Data Secure
+Assume I'm copying a personnel number and its related bank master. If there is a scrambling rule for bank master, how do I actually enable it? On the screen for conversions I only see the rules for the main object, not the releated ones.
+2) Client Sync / Object Sync
+We have a use case where we want to create a new client on the same system with a 1 year timeslice but all company codes. However, for one company code we want to have all data without slicing. How could this be achived?
+3) Object Sync / BOW
+Is there a list somewhere with all supported Business Objects and their related objects? I could of course go in OS and read through the list. However, I want to share this with our functional teams so that they can say what they actually want (without giving them access to Object Sync).
+4) Object Sync / Data Secure
+There was a request to scramble the amount of an accounting document from our functional team. Within the standard there is no such rule. Isn't this a "common" requirement or are there difficulties in applying such scrambling? I'm no finance expert so I would appreciate your input.
+Dear
+Below please find answers to all of your questions:
+1) Object Sync / Data Secure
+Assume I'm copying a personnel number and its related bank master. If there is a scrambling rule for bank master, how do I actually enable it? On the screen for conversions I only see the rules for the main object, not the related ones.
+The related Bank Master record references the Bank Branch Codes and this information normally are uploaded from interface files from the actual banks. Therefor, we only scramble the bank account number, and not the bank branch code itself.
+2) Client Sync / Object Sync
+We have a use case where we want to create a new client on the same system with a 1 year timeslice but all company codes. However, for one company code we want to have all data without slicing. How could this be achieved?
+Client Sync does not have the functionality to time-slice the data for some companies and copy the data for other companies completely into the same client. This can only be achieved by having different target clients, one client for the companies where a time-slice is applied, and another client for the company where no time-slice is applied.
+3) Object Sync / BOW
+Is there a list somewhere with all supported Business Objects and their related objects? I could of course go in OS and read through the list. However, I want to share this with our functional teams so that they can say what they actually want (without giving them access to Object Sync).
+For Object Sync, the best option of providing a list to your users, is to expand the tree in the object-selection screen and make screenshots of that. We cannot provide such a list, as our list will include a complete set of business objects including objects for business sets and industry solutions not applicable to your installation. The list on your own system, will be only those relevant to your installation. In terms of the related objects, all related objects will come from the supported list included on the object selection-screen.
+4) Object Sync / Data Secure
+There was a request to scramble the amount of an accounting document from our functional team. Within the standard there is no such rule. Isn't this a "common" requirement or are there difficulties in applying such scrambling? I'm no finance expert so I would appreciate your input.
+Scrambling the amounts does not make sense functionally, as it will mean that the balances on the accounts, cost centres, profit centres, profitability analysis, etc. will not longer balance back to the detail lines.
+Best regards
+Dear,
+thank you for your detailed response.
+1) Maybe I wasn't clear enough. "Bank" was just an example. The question is what kind of scrambling would be performed on linked objects within Object Sync.
+2) Two clients are not an options as this would break certain functions. Maybe using Client Sync only is not the answer to my question. I was thinking about a mixed approach with CS and OS. Only problem is that I would have to copy all objects object type by object type to the client created by CS. That's very time consuming.
+3) That's kind of complicated as I start to get this question quite frequently and I have better things to do than creating screenshots ;-). I was hoping for a complete overview.
+4) That was also what I told the person asking the question. I had a feeling that this is the reason why it's not offered. Question answered.
+regards
+Dear
+1) If you click on the 'Refine' arrow for the linked object, you will get a screen similar to the main object's selection screen, where you can then also select which of the pre-defined scrambling/conversions you would want to be performed for the linked object.
+2) I suggested the "two client"-option, because using Object Sync to copy all the relevant data for the one company will be very time-consuming and also remember the Object Sync uses the SAP standard BAPI's to create transactions, which will renumber the transactions and therefor the data (especially transactions) will not be an exact match between source and target client. My personal opinion is that Object Sync is not a solution here, because it will be time-consuming and the data will not be exactly the same. Other than my original suggestion, I do not have another solution for your requirement.
+3) I have looked at the OAP results you have send us from GEB, client 005, where I could see which objects you do have data for. Attached is an HTML-download of those objects, grouped by functional area. I trust this will help you.
+Regards
+---------------------------------------------------------------------------------------------------------------------------------------
+Ticket 5: Info request #158172 - Client Syncs and/or Object Syncs between an S/4 1909 & 1809 systems
+We would like perform Client Syncs and/or Object Syncs between an S/4 1909 & 1809 systems.
+Our production source system is currently version 1809. We are in process of upgrading our target systems to version 1909.
+Will there be issues importing into a 1909 system from an export of a 1809 system?
+Dear 
+Thank you for logging the ticket on Client Central. We will review the information provided and get back to you shortly.
+Best regards,
+EPI-USE Labs Global Support
+Dear
+Can you please let me know if you have the same DSM5 build 183 applied on both the source (1809) and target (1909) system?
+Thank you and Best regards,
+EPI-USE Labs Global Support
+Yes. We have same DSM5 build 183 applied to source (1809) and target (1909) systems.
+Dear
+Thank you for the confirmation that you have DSM5 build 183 on your Source and Target systems.
+You do need to have the same DSM5 build applied on both your source and Target systems.
+I am sending you the following KB that will be relevant to your question.
+DSM5
+Can I use DSM on systems with a SAP HANA database?
+Data Sync Manager 5
+Object Sync
+The standard rules apply: Moving data between systems on the same SAP level or from Lower to Higher is allowed.
+Client Sync
+The standard rules apply: The source and target systems have to be on the same SAP level.
+Please let us know if you have more questions and if you need further assistance.
+Best regards,
+EPI-USE Labs Global Support
