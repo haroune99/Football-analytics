@@ -48,36 +48,3 @@ Can you please review Section 3. Authorizations overview and Section 4. Configur
 Please select the Accept option if you are satisfied that the suggested solution has resolved this ticket, alternatively select the Decline option for further assistance.
 Best regards,
 EPI-USE Labs Global Support
----------------------------------------------------------------------------------------------------------------------------------------
-Ticket 3: Info request #58019 - Enable authorization for DMS on DEV & QA
-SAP BASIS team has asked me to enable authorization for DMS on DEV & QA, Please advise on the DSM roles that needs to be assigned to SAP Basis team to test authorization of DMS on Dev and QA.
-Dear 
-Thank you for logging the ticket on Client Central.
-Please see more information on Authorizations in the DSM4 Installation and Admin guide, Section 4 page 17-36 - DSM 4 Installation and Administration Guide
-I am sending you more information on the DSM Authorization Roles.
-Each of the DSM products has layers of functionality. These layers of functionality are categorized into specific roles that will be assumed by a SAP user. The roles are defined within the product. These SAP users are SAP Dialog users and are referred to as Developers, Administrators, Super Users and Users. These roles are enforced by SAP authorizations.
-DSM introduces an additional three authorization objects into your environment: Z123456; Z5948428; and Z0590589. These authorization objects are used to restrict functionality to the DSM product components. These authorization objects will not be part of your existing SAP_ALL user profile unless they are specifically added.
-The following Authorization Profile Templates are delivered as part of DSM to assist in the setting up of authorization roles for users of DSM. To see the list of templates, please execute transaction PFCG. Then access the ‘Utilities’ menu and select ‘Templates’ from the drop-down list. You will see a popup with the templates included in DSM.
-Technical name:
-/USE/vovbneoj3ve: Data Sync Manager – Administrator
-/USE/PfhvbeiberifeE: Data Sync Manager – Developer
-/USE/Pnjfvfkbve: Data Sync Manager – Object Sync User
-/USE/PbjkvbfkjvE: Data Sync Manager – Object Sync Super User
-/USE/PjkdfbvfdjkE: Data Sync Manager – Client Sync User
-/USE/Pjkvbfkjevb: Data Sync Manager – Data Secure User
-/USE/Pnvjflnvfs: Data Sync Manager – Data Secure Super User
-/USE/Pjkfbvkvdv: Data Sync Manager – System Builder User
-/USE/Pbvhfvbfbv: Data Sync Manager - iPhone App
-/USE/nvjfnjvve: Data Sync Manager – Object Sync DSM3COMM user authorizations
-Please let us know if you have more questions or need further assistance.
-Kind regards
-EPI-USE Labs Global Support
-Dear,
-I have executed transaction code PFCG to see the list of templates on QA and I did manage to see the templates:
-My question is are these templates working like roles? can they be assigned to users so that the user can execute on DSM some of the transaction code like: /USE/DSM and /USE/DSM3 . At the moment the Basis person is not able to execute these transactions codes so I am wondering if they have access to this
-regards
-Dear 
-A user will need one of the DSM roles in order to access DSM. On page 14 of the DSM 4 Installation and Administration Guide the roles and their functions are outlined. You can use these descriptions to determine which DSM role the Basis team needs. Usually the Basis team has the Administrator and Client Sync User role.
-Please let us know if you have other questions.
-Kind regards
-EPI-USE Labs Global Support
