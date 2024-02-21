@@ -43,4 +43,4 @@ Guides you through creating a Sync using various data, masking and execution opt
 Sync Describes how to import Syncs5. Delete Client Describes how to delete all of your client’s
 clientdependent data 6. Estimation runs Discusses how to perform an estimation run, which allows
 you to determine the effect a Sync will have on a target system 7. Monitor Desk Covers the DSM
-Monitor Desk, including how to monitor a Sync’s status and view its details
+Monitor Desk, including how to monitor a Sync’s status and view its 
