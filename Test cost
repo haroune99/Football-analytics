@@ -1,0 +1,46 @@
+Client Sync is a flexible and powerful data-transfer solution that allows technical personnel to build
+clients in non-production SAP environments. Client Sync is part of the Data Sync Manager™ (DSM)
+suite, which has five complementary products: Object Sync™ , Client Sync™ , Data Secure™, System
+Builder™ and System Compare™ .  Object Sync allows you to transfer business objects easily and
+accurately, providing you with reliable test data when you need it.  Client Sync offers high-
+performance client copying using a table-oriented approach.  Data Secure protects your sensitive
+data by providing in-place and integrated masking for other DSM products.  System Builder allows
+you to build a new system shell quickly, so you can add object and client data as you need it. 
+System Compare allows you to easily identify system differences in the SAP repository. 1.1 Why use
+Client Sync? Companies using SAP® need to transfer data between clients and systems for
+production development and support or to refresh training clients. Without an adequate transfer
+solution, client copies can be timeconsuming and require a lot of storage space. You also risk
+exposing sensitive data, and transactional flows may be incomplete. With Client Sync, you can create
+testing or training clients quickly and easily by selecting the time slice of data you need and/or data
+for certain company codes (with the option to exclude large or sensitive data sets, such as all the
+employee data from the HCM module). You can also decide whether or not to transfer client-
+independent or client-dependent customization, authorizations, and user masters. Related
+transactional data can also be included so that document flows are complete. Client Sync not only
+eliminates system downtime during copies, but also ensures the integrity of the data. Additional
+functionality allows you to extend delivered business objects and create new customer-defined
+business objects. All delivered business objects adhere to the standard SAP authorizations. As a
+result, Client Sync allows you to create consistent clients easily with just the data you need, when
+you need it, saving time and space and thus reducing costs. 1.2 How Client Sync works Client Sync
+has a highly intuitive and user-friendly GUI that helps you slice and transfer SAP application data
+between clients. A roadmap will lead you through the Sync or import process, allowing you to see
+exactly which phase you’re in. In the process, you can use pre-defined profiles to select and mask a
+specific client subset and control the data transfer using various processing and scheduling options.
+You can also monitor and perform actions on currently executing Syncs in the Monitor Desk, and
+DSM will keep you updated via email or SMS if you set up notifications. Other useful features include
+estimation runs (which allow you to determine how much space you need on the target client before
+executing the transfer) and templates (which reduce the time it takes to create a Sync). Client Sync
+has four authorization templates to ensure stringent control and security within the product: 
+Administrator (who can configure the product)  Control Center Administrator (who can access the
+Administration Desk and Control Center)  Content Developer (who can create and enhance
+business objects)  User (who can execute Syncs). For more information about authorizations, see
+Appendix D. For a glossary of key Client Sync concepts, refer to Important DSM5 terms on our Client
+Central support portal. Client Sync is available for SAP® ERP (including S/4 HANA), SRM, CRM, GTS,
+BW, SCM, Bank Analyzer and NetWeaver. Refer to SAP releases and languages supported by DSM5
+on our Client Central support portal for more information. 1.3 Structure of this guide This guide is
+divided into the following sections and appendices: Section Description 2. Starting Client Sync
+Discusses how to start Client Sync and provides an overview of the DSM launchpads 3. Create Sync
+Guides you through creating a Sync using various data, masking and execution options 4. Import
+Sync Describes how to import Syncs5. Delete Client Describes how to delete all of your client’s
+clientdependent data 6. Estimation runs Discusses how to perform an estimation run, which allows
+you to determine the effect a Sync will have on a target system 7. Monitor Desk Covers the DSM
+Monitor Desk, including how to monitor a Sync’s status and view its details
